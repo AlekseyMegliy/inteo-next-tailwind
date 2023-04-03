@@ -6,7 +6,7 @@
 
 @layer components {
   .button {
-    @apply flex self-start bg-brown px-5 py-3 font-outfit text-sm font-semibold text-white;
+    @apply flex self-start bg-brown px-5 py-3 font-outfit text-sm font-semibold text-white hover:bg-amber-800;
   }
   .sign {
     @apply relative font-outfit text-sm font-semibold text-brown;
