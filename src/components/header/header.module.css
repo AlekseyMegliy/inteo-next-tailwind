@@ -1,0 +1,6 @@
+.header {
+  @apply flex justify-between py-5 px-5 font-outfit text-sm font-medium sm:px-10 md:px-28;
+}
+.header__link {
+  @apply hidden cursor-pointer py-3 sm:inline-block;
+}

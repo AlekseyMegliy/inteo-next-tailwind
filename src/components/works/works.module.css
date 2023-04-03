@@ -1,0 +1,15 @@
+.works {
+  @apply mt-24 mb-14 flex flex-col gap-20 font-playfairDisplay font-normal sm:mt-48 sm:mb-24 md:mt-56 md:mb-28 md:flex-row md:gap-10;
+}
+
+.works_firstCol {
+  @apply flex w-full flex-col text-lg leading-8 text-stone-700 md:w-1/2;
+}
+
+.works_firstCol__item {
+  @apply mt-10 flex flex-col gap-4 sm:mt-20 md:my-24;
+}
+
+.works_secondCol {
+  @apply flex w-full flex-col gap-20 text-lg leading-8 text-stone-700 md:w-1/2 md:px-12;
+}

@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display&family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .button {
+    @apply flex self-start bg-brown px-5 py-3 font-outfit text-sm font-semibold text-white;
+  }
+  .sign {
+    @apply relative font-outfit text-sm font-semibold text-brown;
+  }
+  .container_header {
+    @apply font-playfairDisplay text-4xl font-normal leading-tight tracking-tight text-dark sm:text-6xl sm:leading-tight sm:tracking-normal;
+  }
+}

@@ -1,0 +1,6 @@
+.footer {
+  @apply mx-5 flex flex-wrap justify-between border-t-2 py-10 font-outfit sm:mx-10 sm:py-20 md:mx-28;
+}
+.footer__social {
+  @apply my-2 flex flex-wrap gap-6 text-sm font-medium md:my-0;
+}
