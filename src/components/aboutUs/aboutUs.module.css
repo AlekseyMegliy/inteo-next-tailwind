@@ -4,9 +4,7 @@
 .aboutUs_description {
   @apply my-auto flex w-full flex-col gap-6 font-outfit text-lg leading-8 text-stone-700 md:w-1/2;
 }
-.aboutUs_description__header {
-  @apply font-playfairDisplay text-4xl  font-normal leading-tight tracking-tight text-dark sm:text-6xl sm:leading-tight sm:tracking-normal;
-}
+
 .aboutUs_winner {
   @apply relative my-auto flex w-full justify-center gap-4 md:w-1/2 md:pl-10;
 }

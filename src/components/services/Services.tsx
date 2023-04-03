@@ -1,8 +1,7 @@
 import React from "react";
-import Image from "next/image";
-import ServiceIcon1 from "../../assets/serviceIcon1.svg";
-import ServiceIcon2 from "../../assets/serviceIcon2.svg";
-import ServiceIcon3 from "../../assets/serviceIcon3.svg";
+import ServiceIcon1 from "../../assets/ServiceIcon1.svg";
+import ServiceIcon2 from "../../assets/ServiceIcon2.svg";
+import ServiceIcon3 from "../../assets/ServiceIcon3.svg";
 import styles from "./services.module.css";
 
 export default function Services() {
