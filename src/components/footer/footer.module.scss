@@ -1,0 +1,38 @@
+.footer {
+  @apply container my-10 flex flex-col justify-between font-outfit;
+
+  @screen md {
+    @apply my-20;
+  }
+
+  @screen lg {
+    @apply my-20 flex-row;
+  }
+
+  &__social {
+    @apply my-8 ml-20 flex flex-col gap-4 text-sm font-medium tracking-widest;
+
+    @screen md {
+      @apply flex-row gap-6;
+    }
+
+    @screen lg {
+      @apply my-0;
+    }
+  }
+  &__connect {
+    @apply relative right-20;
+    @apply after:absolute after:left-24 after:top-[10px] after:h-[1px] after:w-16 after:bg-black;
+
+    @screen md {
+      @apply my-2;
+    }
+  }
+  &__icons {
+    @apply relative right-20 flex gap-x-6 gap-y-4;
+
+    @screen md {
+      @apply right-0;
+    }
+  }
+}

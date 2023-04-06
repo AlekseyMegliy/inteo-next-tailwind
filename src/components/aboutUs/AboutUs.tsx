@@ -3,21 +3,33 @@ import Image from "next/image";
 import Star from "../../assets/Star.svg";
 import aboutImg1 from "../../assets/aboutImg1.png";
 import aboutImg2 from "../../assets/aboutImg2.png";
-import styles from "./aboutUs.module.css";
+import styles from "./aboutUs.module.scss";
 
 export default function AboutUs() {
+  const statistics = [
+    {
+      num: "100%",
+      desc: "SATISFITATION CLIENTS",
+    },
+    {
+      num: "250",
+      desc: "EMPLOYEES ON WORLDWIDE",
+    },
+    {
+      num: "3469",
+      desc: "PROJECTS COMPLETED ON 60 COUNTRIES",
+    },
+  ];
   return (
-    <div className={styles.aboutUs} id="aboutUs">
-      <div className={styles.aboutUs_description}>
-        <span className="flex gap-4">
-          <svg className="my-auto w-16" height="1px">
-            <rect x="0" y="0" width="64px" height="1px" fill="#996830" />
-          </svg>
+    <section className={styles.aboutUs} id="aboutUs">
+      <div className={styles.aboutUs__description}>
+        <span className="flex flex-col gap-6">
           <p className="sign">ABOUT US</p>
+          <h1 className="container_header">
+            We help to bring your <i>dream home</i> to reality
+          </h1>
         </span>
-        <h1 className="container_header">
-          We help to bring your <i>dream home</i> to reality
-        </h1>
+
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
           fringilla dui amet faucibus nam. Erat id laoreet posuere etiam morbi.
@@ -29,14 +41,14 @@ export default function AboutUs() {
           bibendum lobortis diam.
         </p>
       </div>
-      <div className={styles.aboutUs_winner}>
-        <div className={styles.aboutUs_winner__circle}>
-          <Star className="absolute top-12 left-12" alt="Star" />
+      <div className={styles.aboutUs__winner}>
+        <div className={styles.aboutUs__circle}>
+          <Star className="absolute left-14 top-14" alt="Star" />
           <svg
             className=" -rotate-45"
             viewBox="-15.5 75.5  130 130"
-            width="120"
-            height="120"
+            width="135"
+            height="135"
           >
             <defs>
               <path
@@ -67,29 +79,14 @@ export default function AboutUs() {
           priority
         />
       </div>
-      <div className={styles.aboutUs_statistics}>
-        <span className="flex flex-grow flex-wrap">
-          <h1 className="font-playfairNumbers text-6xl -tracking-wide">100%</h1>
-          <p className="mx-2 mt-3.5 sm:mt-2 md:mt-3.5">
-            SATISFITATION <br />
-            CLIENTS
-          </p>
-        </span>
-        <span className="flex flex-grow flex-wrap">
-          <h1 className="font-playfairNumbers text-6xl -tracking-wide">250</h1>
-          <p className="mx-2 mt-3.5 sm:mt-2 md:mt-3.5">
-            EMPLOYEES ON <br />
-            WORLDWIDE
-          </p>
-        </span>
-        <span className="flex flex-grow flex-wrap">
-          <h1 className="font-playfairNumbers text-6xl -tracking-wide">3469</h1>
-          <p className="mx-2 mt-3.5 sm:mt-2 md:mt-3.5">
-            PROJECTS COMPLETED <br />
-            ON 60 COUNTRIES
-          </p>
-        </span>
-      </div>
-    </div>
+      <ul className={styles.aboutUs__statistics}>
+        {statistics.map((item, index) => (
+          <li className="flex flex-grow flex-wrap" key={index}>
+            <h1 className={styles.aboutUs__statistics_number}>{item.num}</h1>
+            <p className={styles.aboutUs__statistics_desc}>{item.desc}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }

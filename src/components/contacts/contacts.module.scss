@@ -1,0 +1,44 @@
+.contacts {
+  @apply container my-10 flex flex-col justify-between gap-12 font-playfairDisplay font-normal;
+
+  @screen md {
+    @apply my-20;
+  }
+  @screen lg {
+    @apply flex-row;
+  }
+
+  &__headers {
+    @apply w-full text-3xl leading-10;
+
+    @screen sm {
+      @apply w-3/4 text-5xl;
+    }
+    @screen md {
+      @apply leading-tight;
+    }
+    @screen lg {
+      @apply w-1/2;
+    }
+  }
+  &__sayHi {
+    @apply mt-2 inline-block  border-b-2 border-brown italic text-brown;
+
+    @screen md {
+      @apply mt-4;
+    }
+  }
+  &__contactsCol {
+    @apply flex w-full flex-col gap-8 font-outfit text-sm font-light leading-6;
+
+    @screen md {
+      @apply w-[280px];
+    }
+    @screen lg {
+      @apply pl-2;
+    }
+  }
+  &__contact {
+    @apply font-playfairDisplay text-2xl font-normal text-brown;
+  }
+}

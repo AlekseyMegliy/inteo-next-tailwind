@@ -1,0 +1,32 @@
+.services {
+  @apply container my-24 flex flex-col gap-9 font-playfairDisplay font-normal;
+
+  @screen md {
+    @apply my-36 gap-16;
+  }
+  @screen lg {
+    @apply my-40;
+  }
+
+  &__headers {
+    @apply my-auto flex w-full flex-col gap-6 text-lg leading-8 text-stone-700;
+
+    @screen lg {
+      @apply w-3/5;
+    }
+  }
+  &__item {
+    @apply flex-grow border-2 border-beige p-8;
+
+    @screen md {
+      @apply p-10;
+    }
+  }
+}
+.services_item__header {
+  @apply mb-4 text-3xl leading-10;
+
+  @screen md {
+    @apply text-4xl leading-snug;
+  }
+}

@@ -1,0 +1,68 @@
+.aboutUs {
+  @apply container -mt-5 flex flex-wrap gap-16 pb-14;
+
+  @screen sm {
+    @apply mt-8;
+  }
+  @screen md {
+    @apply gap-24;
+  }
+  @screen lg {
+    @apply mt-14 gap-0 pb-20;
+  }
+
+  &__description {
+    @apply my-auto flex w-full flex-col gap-6 pr-2 text-base leading-6 text-stone-700;
+
+    @screen md {
+      @apply text-lg leading-8;
+    }
+
+    @screen lg {
+      @apply w-1/2 pr-5;
+    }
+  }
+
+  &__winner {
+    @apply relative mt-4 flex w-full justify-center gap-3 px-1;
+
+    @screen md {
+      @apply my-3 px-2;
+    }
+    @screen lg {
+      @apply w-1/2 gap-4 pl-5;
+    }
+  }
+  &__circle {
+    @apply absolute -top-20 left-[42%] z-10  mt-4 inline-block rounded-full;
+  }
+
+  &__statistics {
+    @apply flex w-full flex-col justify-between gap-11 font-outfit text-sm font-normal tracking-wider;
+
+    @screen md {
+      @apply flex-row;
+    }
+    @screen lg {
+      @apply mt-32 gap-24;
+    }
+    &_number {
+      @apply font-playfairDisplay text-5xl -tracking-wide;
+
+      @screen md {
+        @apply text-6xl;
+      }
+    }
+    &_desc {
+      @apply mx-2 mt-2 w-[167px];
+
+      @screen md {
+        @apply mx-0;
+      }
+
+      @screen lg {
+        @apply mx-4 mt-3.5;
+      }
+    }
+  }
+}
