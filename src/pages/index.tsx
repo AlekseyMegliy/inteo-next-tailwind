@@ -7,16 +7,20 @@ import Works from "../components/works/Works";
 import Divider from "../components/divider/divider";
 import { useEffect, useState } from "react";
 
-export default function Home() {
-  const [width, setWidth] = useState(1000);
-
+function useWindowSize() {
+  const [size, setSize] = useState([1000]);
   useEffect(() => {
-    window.addEventListener("resize", updateWidth);
+    function updateSize() {
+      setSize([window.innerWidth]);
+    }
+    window.addEventListener("resize", updateSize);
+    updateSize();
+    return () => window.removeEventListener("resize", updateSize);
   }, []);
-
-  function updateWidth() {
-    setWidth(window.innerWidth);
-  }
+  return size;
+}
+export default function Home() {
+  const [width] = useWindowSize();
   return (
     <>
       <Head>
