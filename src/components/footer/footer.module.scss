@@ -19,23 +19,23 @@
     @screen lg {
       @apply my-0;
     }
-  }
-  &__connect {
-    @apply relative right-20
+    &_connect {
+      @apply relative right-20
     after:absolute after:left-24 after:top-[10px] after:h-[1px] after:w-16 after:bg-black;
 
-    @screen md {
-      @apply my-2;
+      @screen md {
+        @apply my-2;
+      }
     }
-  }
-  &__icons {
-    @apply relative right-20 flex gap-x-6 gap-y-4;
+    &_icons {
+      @apply relative right-20 flex gap-x-6 gap-y-4;
 
-    @screen md {
-      @apply right-0;
+      @screen md {
+        @apply right-0;
+      }
     }
-  }
-  &__icon {
-    @apply transition-all duration-300 ease-in-out hover:scale-105 hover:opacity-80;
+    &_icon {
+      @apply transition-all duration-300 ease-in-out hover:scale-105 hover:opacity-80;
+    }
   }
 }

@@ -14,12 +14,12 @@
     @screen md {
       @apply p-10;
     }
-  }
-}
-.services_item__header {
-  @apply mb-4 text-3xl font-normal leading-10;
+    &_header {
+      @apply mb-4 text-3xl font-normal leading-10;
 
-  @screen md {
-    @apply text-4xl leading-snug;
+      @screen md {
+        @apply text-4xl leading-snug;
+      }
+    }
   }
 }

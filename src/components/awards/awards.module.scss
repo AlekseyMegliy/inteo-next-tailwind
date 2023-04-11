@@ -2,7 +2,7 @@
   @apply mt-20 flex flex-col;
 
   &__headers {
-    @apply container flex flex-col justify-center;
+    @apply container flex flex-col items-center  justify-center;
   }
 
   &__header {
@@ -14,7 +14,7 @@
   }
 
   &__subheader {
-    @apply mx-auto mt-6 w-full px-2 text-center text-lg leading-8;
+    @apply mt-6 w-full px-2 text-center text-lg leading-8;
 
     @screen sm {
       @apply text-xl;
@@ -37,10 +37,10 @@
     @apply relative left-0 z-10 mt-4 inline-block transform rounded-full border-4 border-solid border-white bg-dark-900;
   }
 
-  &_honors {
+  &__honors {
     @apply flex w-full bg-dark-900 py-6 text-sm font-normal leading-6;
 
-    &__header {
+    &_header {
       @apply rotate-180 transform pl-[52px] font-playfairDisplay text-2xl italic text-white opacity-50 vertical-lr
       after:absolute after:left-5 after:top-1/2 after:h-[1px] after:w-6 after:bg-white;
 
@@ -49,10 +49,7 @@
         @apply after:left-4 after:w-16;
       }
     }
-    &__line {
-      @apply my-auto ml-2 mr-5 w-6 opacity-50 md:mx-5 md:w-16;
-    }
-    &__items {
+    &_items {
       @apply flex w-64 flex-wrap justify-between gap-y-6;
 
       @screen md {
@@ -64,7 +61,7 @@
       }
     }
 
-    &__item {
+    &_item {
       @apply box-content flex h-20 w-auto text-sm text-dark-300;
 
       @screen md {

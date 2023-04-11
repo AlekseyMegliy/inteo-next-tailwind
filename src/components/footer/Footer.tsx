@@ -13,27 +13,27 @@ export default function Footer() {
         <span className="inline text-primary-600"> Landify</span>
       </p>
       <div className={styles.footer__social}>
-        <p className={styles.footer__connect}>CONNECT</p>
+        <p className={styles.footer__social_connect}>CONNECT</p>
 
-        <ul className={styles.footer__icons}>
+        <ul className={styles.footer__social_icons}>
           <li>
             <a href="#">
-              <Inst alt="Instagram" className={styles.footer__icon} />
+              <Inst alt="Instagram" className={styles.footer__social_icon} />
             </a>
           </li>
           <li>
             <a href="#">
-              <Fb alt="Facebook" className={styles.footer__icon} />
+              <Fb alt="Facebook" className={styles.footer__social_icon} />
             </a>
           </li>
           <li>
             <a href="#">
-              <Yt alt="Logo" className={styles.footer__icon} />
+              <Yt alt="Logo" className={styles.footer__social_icon} />
             </a>
           </li>
           <li>
             <a href="#">
-              <Tw alt="Logo" className={styles.footer__icon} />
+              <Tw alt="Logo" className={styles.footer__social_icon} />
             </a>
           </li>
         </ul>

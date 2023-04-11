@@ -88,14 +88,14 @@ export default function Awards({ width }: { width: number }) {
             />
           )}
 
-          <div className={styles.awards_honors}>
+          <div className={styles.awards__honors}>
             <div className="container flex justify-center">
               <span className=" flex h-20 md:my-auto">
-                <p className={styles.awards_honors__header}>Awards</p>
+                <p className={styles.awards__honors_header}>Awards</p>
               </span>
-              <ul className={styles.awards_honors__items}>
+              <ul className={styles.awards__honors_items}>
                 {awards.map((item, index) => (
-                  <li className={styles.awards_honors__item} key={index}>
+                  <li className={styles.awards__honors_item} key={index}>
                     <item.icon alt="Design Award" />
                     <p className="mx-3 my-auto">
                       {item.title} <br />

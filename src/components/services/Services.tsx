@@ -34,8 +34,8 @@ export default function Services() {
       <div className="flex flex-col gap-8 lg:flex-row">
         {services.map((item, index) => (
           <div className={styles.services__item} key={index}>
-            <item.icon alt="Service" />
-            <h3 className={styles.services_item__header}>{item.head}</h3>
+            <item.icon alt="Service" className="mb-6 md:mb-20" />
+            <h3 className={styles.services__item_header}>{item.head}</h3>
             <p>{item.desc}</p>
           </div>
         ))}
