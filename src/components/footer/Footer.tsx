@@ -8,32 +8,32 @@ import styles from "./footer.module.scss";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <span className="text-base font-light lg:my-2">
+      <p className="text-base font-light lg:my-2">
         © 2022 Inteo - Award winning studio. Made with love by{" "}
-        <p className="inline text-brown"> Landify</p>
-      </span>
+        <span className="inline text-primary-600"> Landify</span>
+      </p>
       <div className={styles.footer__social}>
         <p className={styles.footer__connect}>CONNECT</p>
 
         <ul className={styles.footer__icons}>
           <li>
             <a href="#">
-              <Inst alt="Instagram" />
+              <Inst alt="Instagram" className={styles.footer__icon} />
             </a>
           </li>
           <li>
             <a href="#">
-              <Fb alt="Facebook" />
+              <Fb alt="Facebook" className={styles.footer__icon} />
             </a>
           </li>
           <li>
             <a href="#">
-              <Yt alt="Logo" />
+              <Yt alt="Logo" className={styles.footer__icon} />
             </a>
           </li>
           <li>
             <a href="#">
-              <Tw alt="Logo" />
+              <Tw alt="Logo" className={styles.footer__icon} />
             </a>
           </li>
         </ul>

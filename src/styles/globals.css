@@ -6,13 +6,22 @@
 
 @layer components {
   .button {
-    @apply flex self-start bg-brown px-4 py-3 font-outfit text-sm font-semibold text-white hover:bg-amber-800;
+    @apply flex self-start bg-primary-600 px-5 py-3 font-outfit text-xs font-semibold leading-5 text-white transition duration-300 ease-in-out hover:bg-orange-900 hover:shadow-xl;
   }
   .sign {
-    @apply relative ml-20 font-outfit text-sm font-semibold tracking-widest text-brown;
-    @apply before:absolute before:-left-20 before:top-[10px] before:h-[1px] before:w-16 before:bg-brown;
+    @apply relative ml-20 font-outfit text-sm font-semibold tracking-widest text-primary-600
+    before:absolute before:-left-20 before:top-[10px] before:h-[1px] before:w-16 before:bg-primary-600;
   }
   .container_header {
-    @apply font-playfairDisplay text-4xl font-normal leading-tight text-dark md:text-6xl md:leading-tight md:tracking-tight;
+    @apply font-playfairDisplay text-4xl leading-tight md:text-6xl md:leading-tight md:tracking-tight;
+  }
+  body {
+    @apply font-outfit text-lg font-light leading-8 text-dark-700;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-playfairDisplay font-normal text-dark-900;
   }
 }

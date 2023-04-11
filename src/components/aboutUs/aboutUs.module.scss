@@ -1,5 +1,5 @@
 .aboutUs {
-  @apply container -mt-5 flex flex-wrap gap-16 pb-14;
+  @apply container -mt-5 flex flex-col gap-16 pb-14;
 
   @screen sm {
     @apply mt-8;
@@ -12,7 +12,7 @@
   }
 
   &__description {
-    @apply my-auto flex w-full flex-col gap-6 pr-2 text-base leading-6 text-stone-700;
+    @apply my-auto flex w-full flex-col gap-6 pr-2 text-base leading-6;
 
     @screen md {
       @apply text-lg leading-8;
@@ -38,16 +38,16 @@
   }
 
   &__statistics {
-    @apply flex w-full flex-col justify-between gap-11 font-outfit text-sm font-normal tracking-wider;
+    @apply flex w-full flex-col justify-between gap-11 text-sm font-normal tracking-wider;
 
     @screen md {
       @apply flex-row;
     }
     @screen lg {
-      @apply mt-32 gap-24;
+      @apply mt-32 justify-start gap-10;
     }
     &_number {
-      @apply font-playfairDisplay text-5xl -tracking-wide;
+      @apply font-playfairDisplay text-5xl -tracking-wide text-dark-900;
 
       @screen md {
         @apply text-6xl;

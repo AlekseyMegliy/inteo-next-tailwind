@@ -16,9 +16,9 @@ export default function Header({ width }: { width: number }) {
   return (
     <header className={styles.header}>
       <Logo alt="Logo" className="my-2" />
-      <ul className="flex gap-11">
+      <div className="flex gap-11">
         {width >= 768 && (
-          <>
+          <ul className="flex gap-11">
             <li>
               <a
                 className={styles.header__link}
@@ -43,14 +43,13 @@ export default function Header({ width }: { width: number }) {
                 Our Work
               </a>
             </li>
-          </>
+          </ul>
         )}
-        <li>
-          <button className="button">
-            CONTUCT US <Arrow alt="Arrow" />
-          </button>
-        </li>
-      </ul>
+
+        <button className="button">
+          CONTACT US <Arrow alt="Arrow" className="ml-1" />
+        </button>
+      </div>
     </header>
   );
 }

@@ -1,12 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require("tailwindcss/plugin");
 module.exports = {
-  content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     container: {
       center: true,
@@ -23,7 +18,18 @@ module.exports = {
       sm: "500px",
     },
     extend: {
-      colors: { brown: "#996830", dark: "#2C2C2C", beige: "#E6D8CC" },
+      colors: {
+        primary: {
+          100: "#E6D8CC",
+          300: "#C4A386",
+          600: "#996830",
+        },
+        dark: {
+          300: "#D9D9D6",
+          700: "#444444",
+          900: "#2C2C2C",
+        },
+      },
     },
     fontFamily: {
       outfit: ["Outfit", "Arial", "sans-serif"],

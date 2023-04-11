@@ -1,5 +1,5 @@
 .works {
-  @apply container mb-14 mt-24 flex flex-col gap-12 font-playfairDisplay font-normal;
+  @apply container mb-14 mt-24 flex flex-col gap-12;
 
   @screen sm {
     @apply mb-24 mt-48;
@@ -12,7 +12,7 @@
   }
 
   &__firstCol {
-    @apply flex w-full flex-col gap-12 px-[1px] text-lg leading-8 text-stone-700;
+    @apply flex w-full flex-col gap-12 px-[1px] text-lg leading-8;
 
     @screen lg {
       @apply w-1/2 gap-24;
@@ -20,7 +20,7 @@
   }
 
   &__secondCol {
-    @apply flex w-full flex-col gap-12 px-[1px] text-stone-700;
+    @apply flex w-full flex-col gap-12 px-[1px];
 
     @screen md {
       @apply gap-20;

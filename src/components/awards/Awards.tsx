@@ -9,52 +9,40 @@ import IfDA from "../../assets/ifDA.svg";
 import GoodDA from "../../assets/goodDA.svg";
 import styles from "./awards.module.scss";
 
+const awards = [
+  {
+    icon: GermanDA,
+    title: "German Design Award",
+    year: "2021",
+  },
+  {
+    icon: GoldDA,
+    title: "Gold A’ Design Award",
+    year: "2021",
+  },
+  {
+    icon: IfDA,
+    title: "IF Design Award",
+    year: "2020",
+  },
+  {
+    icon: GoodDA,
+    title: "Good Design Award",
+    year: "2019",
+  },
+];
 export default function Awards({ width }: { width: number }) {
-  const awards = [
-    {
-      icon: "German",
-      title: "German Design Award",
-      year: "2021",
-    },
-    {
-      icon: "Gold",
-      title: "Gold A’ Design Award",
-      year: "2021",
-    },
-    {
-      icon: "IF",
-      title: "IF Design Award",
-      year: "2020",
-    },
-    {
-      icon: "Good",
-      title: "Good Design Award",
-      year: "2019",
-    },
-  ];
-  function icons(name: string) {
-    switch (name) {
-      case "German":
-        return <GermanDA alt="German Design Award" />;
-      case "Gold":
-        return <GoldDA alt="Gold Design Award" />;
-      case "IF":
-        return <IfDA alt="IF Design Award" />;
-      case "Good":
-        return <GoodDA alt="Good Design Award" />;
-    }
-  }
   return (
     <section className={styles.awards}>
       <div className={styles.awards__headers}>
         <h1 className={styles.awards__header}>
           Make <i>your home</i> an ode to joy
         </h1>
-        <h2 className={styles.awards__postheader}>
+        <p className={styles.awards__subheader}>
           We turn your empty house to a lovely home, making the compact spaces
           with sapce saving furnitures. Making the unique tastes of yours into
           reality!
-        </h2>
+        </p>
       </div>
       <div className={styles.awards__hero}>
         <div className="container text-center lg:text-left">
@@ -83,17 +71,17 @@ export default function Awards({ width }: { width: number }) {
             </svg>
           </div>
         </div>
-        <div className="relative bottom-16 overflow-hidden">
-          {width < 380 ? (
+        <div className="relative bottom-16 w-full overflow-hidden">
+          {width < 480 ? (
             <Image
-              className="h-[641px] object-cover "
+              className=" h-[640px] w-full object-cover"
               alt="Main Img"
               src={heroImgMob}
               priority
             />
           ) : (
             <Image
-              className="h-[640px] object-cover "
+              className="h-[640px] object-cover  "
               alt="Main Img"
               src={heroImg}
               priority
@@ -108,7 +96,7 @@ export default function Awards({ width }: { width: number }) {
               <ul className={styles.awards_honors__items}>
                 {awards.map((item, index) => (
                   <li className={styles.awards_honors__item} key={index}>
-                    {icons(item.icon)}
+                    <item.icon alt="Design Award" />
                     <p className="mx-3 my-auto">
                       {item.title} <br />
                       {item.year}

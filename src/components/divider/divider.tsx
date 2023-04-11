@@ -2,8 +2,6 @@ import React from "react";
 
 export default function Divider() {
   return (
-    <div className="container">
-      <p className="border-b-2"></p>
-    </div>
+    <div className="container after:block after:h-[1px] after:bg-dark-300"></div>
   );
 }

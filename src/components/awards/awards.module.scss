@@ -1,23 +1,23 @@
 .awards {
-  @apply mt-20 flex flex-wrap font-playfairDisplay;
+  @apply mt-20 flex flex-col;
 
   &__headers {
-    @apply container flex flex-wrap justify-center;
+    @apply container flex flex-col justify-center;
   }
 
   &__header {
-    @apply text-center text-5xl font-medium leading-tight text-dark;
+    @apply text-center text-5xl font-medium leading-tight;
 
     @screen sm {
       @apply text-7xl leading-tight tracking-tight;
     }
   }
 
-  &__postheader {
-    @apply mt-7 w-full text-center text-lg font-light leading-8 text-stone-700;
+  &__subheader {
+    @apply mx-auto mt-6 w-full px-2 text-center text-lg leading-8;
 
     @screen sm {
-      @apply text-xl leading-8;
+      @apply text-xl;
     }
 
     @screen lg {
@@ -34,15 +34,15 @@
   }
 
   &__circle {
-    @apply relative left-0 z-10 mt-4 inline-block transform rounded-full border-4 border-solid border-white bg-dark;
+    @apply relative left-0 z-10 mt-4 inline-block transform rounded-full border-4 border-solid border-white bg-dark-900;
   }
 
   &_honors {
-    @apply flex w-full bg-dark py-6 text-sm font-normal leading-6;
+    @apply flex w-full bg-dark-900 py-6 text-sm font-normal leading-6;
 
     &__header {
-      @apply rotate-180 transform pl-[52px] font-playfairDisplay text-2xl italic text-white opacity-50 vertical-lr;
-      @apply after:absolute after:left-5 after:top-1/2 after:h-[1px] after:w-6 after:bg-white;
+      @apply rotate-180 transform pl-[52px] font-playfairDisplay text-2xl italic text-white opacity-50 vertical-lr
+      after:absolute after:left-5 after:top-1/2 after:h-[1px] after:w-6 after:bg-white;
 
       @screen md {
         @apply pl-[105px];
@@ -53,7 +53,7 @@
       @apply my-auto ml-2 mr-5 w-6 opacity-50 md:mx-5 md:w-16;
     }
     &__items {
-      @apply flex w-64 flex-wrap justify-between gap-y-6 font-outfit;
+      @apply flex w-64 flex-wrap justify-between gap-y-6;
 
       @screen md {
         @apply w-full gap-y-8;
@@ -65,7 +65,7 @@
     }
 
     &__item {
-      @apply box-content flex h-20 w-auto text-sm text-gray-300;
+      @apply box-content flex h-20 w-auto text-sm text-dark-300;
 
       @screen md {
         @apply w-64;
