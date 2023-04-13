@@ -1,4 +1,4 @@
-.aboutUs {
+.root {
   @apply container -mt-5 flex flex-wrap gap-16 pb-14;
 
   @screen sm {
@@ -10,59 +10,29 @@
   @screen lg {
     @apply mt-14 gap-0 pb-20;
   }
+}
+.description {
+  @apply my-auto flex w-full flex-col gap-6 pr-2 text-base leading-6;
 
-  &__description {
-    @apply my-auto flex w-full flex-col gap-6 pr-2 text-base leading-6;
-
-    @screen md {
-      @apply text-lg leading-8;
-    }
-
-    @screen lg {
-      @apply w-1/2 pr-5;
-    }
+  @screen md {
+    @apply text-lg leading-8;
   }
 
-  &__winner {
-    @apply relative mt-4 flex w-full justify-center gap-3 px-1;
-
-    @screen md {
-      @apply my-3 px-2;
-    }
-    @screen lg {
-      @apply w-1/2 gap-4 pl-5;
-    }
+  @screen lg {
+    @apply w-1/2 pr-5;
   }
-  &__circle {
-    @apply absolute -top-20 left-[42%] z-10  mt-4 inline-block rounded-full;
+}
+
+.winner {
+  @apply relative mt-4 flex w-full justify-center gap-3 px-1;
+
+  @screen md {
+    @apply my-3 px-2;
   }
-
-  &__statistics {
-    @apply flex w-full flex-col justify-between gap-11 text-sm font-normal tracking-wider;
-
-    @screen md {
-      @apply flex-row;
-    }
-    @screen lg {
-      @apply mt-32 justify-start gap-10;
-    }
-    &_number {
-      @apply font-playfairDisplay text-5xl -tracking-wide text-dark-900;
-
-      @screen md {
-        @apply text-6xl;
-      }
-    }
-    &_desc {
-      @apply mx-2 mt-2 w-[167px];
-
-      @screen md {
-        @apply mx-0;
-      }
-
-      @screen lg {
-        @apply mx-4 mt-3.5;
-      }
-    }
+  @screen lg {
+    @apply w-1/2 gap-4 pl-5;
   }
+}
+.circle {
+  @apply absolute -top-20 left-[42%] z-10  mt-4 inline-block rounded-full;
 }

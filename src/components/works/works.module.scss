@@ -1,5 +1,5 @@
-.works {
-  @apply container mb-14 mt-24 flex flex-col gap-12;
+.root {
+  @apply mb-14 mt-24 flex flex-col gap-12;
 
   @screen sm {
     @apply mb-24 mt-48;
@@ -10,32 +10,31 @@
   @screen lg {
     @apply mb-28 mt-56 flex-row gap-10;
   }
+}
+.firstCol {
+  @apply flex w-full flex-col gap-12 text-lg leading-8;
 
-  &__firstCol {
-    @apply flex w-full flex-col gap-12 px-[1px] text-lg leading-8;
+  @screen lg {
+    @apply w-1/2 gap-24;
+  }
+}
 
-    @screen lg {
-      @apply w-1/2 gap-24;
-    }
+.secondCol {
+  @apply flex w-full flex-col gap-12;
+
+  @screen md {
+    @apply gap-20;
   }
 
-  &__secondCol {
-    @apply flex w-full flex-col gap-12 px-[1px];
-
-    @screen md {
-      @apply gap-20;
-    }
-
-    @screen lg {
-      @apply w-1/2 px-14;
-    }
+  @screen lg {
+    @apply w-1/2 px-14;
   }
+}
 
-  &__item {
-    @apply flex flex-col gap-4 text-sm leading-6;
+.item {
+  @apply flex flex-col gap-4 text-sm leading-6;
 
-    @screen md {
-      @apply text-lg leading-8;
-    }
+  @screen md {
+    @apply text-lg leading-8;
   }
 }

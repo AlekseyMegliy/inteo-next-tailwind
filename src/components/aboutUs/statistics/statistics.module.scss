@@ -1,0 +1,28 @@
+.root {
+  @apply flex w-full flex-col justify-between gap-11 text-sm font-normal tracking-wider;
+
+  @screen md {
+    @apply flex-row;
+  }
+  @screen lg {
+    @apply mt-32 justify-start gap-10;
+  }
+}
+.number {
+  @apply font-playfairDisplay text-5xl -tracking-wide text-dark-900;
+
+  @screen md {
+    @apply text-6xl;
+  }
+}
+.desc {
+  @apply mx-2 mt-2 w-[167px];
+
+  @screen md {
+    @apply mx-0;
+  }
+
+  @screen lg {
+    @apply mx-4 mt-3.5;
+  }
+}

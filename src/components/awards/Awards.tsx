@@ -1,52 +1,27 @@
 import React from "react";
 import Image from "next/image";
+import Honors from "./honors/honors";
 import Arrow from "../../assets/ArrowBg.svg";
 import heroImg from "../../assets/hero-image.png";
 import heroImgMob from "../../assets/hero-image-mob.png";
-import GermanDA from "../../assets/germanDA.svg";
-import GoldDA from "../../assets/goldDA.svg";
-import IfDA from "../../assets/ifDA.svg";
-import GoodDA from "../../assets/goodDA.svg";
 import styles from "./awards.module.scss";
 
-const awards = [
-  {
-    icon: GermanDA,
-    title: "German Design Award",
-    year: "2021",
-  },
-  {
-    icon: GoldDA,
-    title: "Gold A’ Design Award",
-    year: "2021",
-  },
-  {
-    icon: IfDA,
-    title: "IF Design Award",
-    year: "2020",
-  },
-  {
-    icon: GoodDA,
-    title: "Good Design Award",
-    year: "2019",
-  },
-];
 export default function Awards({ width }: { width: number }) {
   return (
-    <section className={styles.awards}>
-      <div className={styles.awards__headers}>
-        <h1 className={styles.awards__header}>
+    <section className={styles.root}>
+      <div className={styles.headers}>
+        <h1 className={styles.header}>
           Make <i>your home</i> an ode to joy
         </h1>
-        <p className={styles.awards__subheader}>
+        <p className={styles.subheader}>
           We turn your empty house to a lovely home, making the compact spaces
           with sapce saving furnitures. Making the unique tastes of yours into
           reality!
         </p>
       </div>
-      <div className={styles.awards__hero}>
+      <div className={styles.hero}>
         <div className="container text-center lg:text-left">
-          <div className={styles.awards__circle}>
+          <div className={styles.circle}>
             <Arrow className="absolute right-10 top-10" alt="Arrow" />
             <svg
               className=" rotate-[107deg]"
@@ -88,24 +63,7 @@ export default function Awards({ width }: { width: number }) {
             />
           )}
 
-          <div className={styles.awards__honors}>
-            <div className="container flex justify-center">
-              <span className=" flex h-20 md:my-auto">
-                <p className={styles.awards__honors_header}>Awards</p>
-              </span>
-              <ul className={styles.awards__honors_items}>
-                {awards.map((item, index) => (
-                  <li className={styles.awards__honors_item} key={index}>
-                    <item.icon alt="Design Award" />
-                    <p className="mx-3 my-auto">
-                      {item.title} <br />
-                      {item.year}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+          <Honors />
         </div>
       </div>
     </section>

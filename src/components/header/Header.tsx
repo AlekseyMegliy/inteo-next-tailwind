@@ -14,14 +14,14 @@ export default function Header({ width }: { width: number }) {
     });
   };
   return (
-    <header className={styles.header}>
-      <Logo alt="Logo" className="my-2" />
+    <header className={styles.root}>
+      <Logo alt="Logo" />
       <div className="flex gap-11">
         {width >= 768 && (
           <ul className="flex gap-11">
             <li>
               <a
-                className={styles.header__link}
+                className={styles.link}
                 onClick={() => scrollToElement("aboutUs")}
               >
                 About
@@ -29,7 +29,7 @@ export default function Header({ width }: { width: number }) {
             </li>
             <li>
               <a
-                className={styles.header__link}
+                className={styles.link}
                 onClick={() => scrollToElement("services")}
               >
                 Services
@@ -37,7 +37,7 @@ export default function Header({ width }: { width: number }) {
             </li>
             <li>
               <a
-                className={styles.header__link}
+                className={styles.link}
                 onClick={() => scrollToElement("works")}
               >
                 Our Work

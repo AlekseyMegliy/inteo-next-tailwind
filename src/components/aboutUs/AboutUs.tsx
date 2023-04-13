@@ -1,31 +1,18 @@
 import React from "react";
 import Image from "next/image";
+import Statistics from "./statistics/statistics";
 import Star from "../../assets/Star.svg";
 import aboutImg1 from "../../assets/aboutImg1.png";
 import aboutImg2 from "../../assets/aboutImg2.png";
 import styles from "./aboutUs.module.scss";
-const statistics = [
-  {
-    num: "100%",
-    desc: "SATISFITATION CLIENTS",
-  },
-  {
-    num: "250",
-    desc: "EMPLOYEES ON WORLDWIDE",
-  },
-  {
-    num: "3469",
-    desc: "PROJECTS COMPLETED ON 60 COUNTRIES",
-  },
-];
 
 export default function AboutUs() {
   return (
-    <section className={styles.aboutUs} id="aboutUs">
-      <div className={styles.aboutUs__description}>
+    <section className={styles.root} id="aboutUs">
+      <div className={styles.description}>
         <div className="flex flex-col gap-6">
           <p className="sign">ABOUT US</p>
-          <h2 className="container_header">
+          <h2 className="containerHeader">
             We help to bring your <i>dream home</i> to reality
           </h2>
         </div>
@@ -41,8 +28,8 @@ export default function AboutUs() {
           bibendum lobortis diam.
         </p>
       </div>
-      <div className={styles.aboutUs__winner}>
-        <div className={styles.aboutUs__circle}>
+      <div className={styles.winner}>
+        <div className={styles.circle}>
           <Star className="absolute left-14 top-14" alt="Star" />
           <svg
             className=" -rotate-45"
@@ -79,14 +66,7 @@ export default function AboutUs() {
           priority
         />
       </div>
-      <ul className={styles.aboutUs__statistics}>
-        {statistics.map((item, index) => (
-          <li className="flex flex-grow flex-wrap" key={index}>
-            <h1 className={styles.aboutUs__statistics_number}>{item.num}</h1>
-            <p className={styles.aboutUs__statistics_desc}>{item.desc}</p>
-          </li>
-        ))}
-      </ul>
+      <Statistics />
     </section>
   );
 }

@@ -7,33 +7,33 @@ import styles from "./footer.module.scss";
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
-      <p className="text-base font-light lg:my-2">
+    <footer className={styles.root}>
+      <p className="text-base font-light">
         © 2022 Inteo - Award winning studio. Made with love by{" "}
         <span className="inline text-primary-600"> Landify</span>
       </p>
-      <div className={styles.footer__social}>
-        <p className={styles.footer__social_connect}>CONNECT</p>
+      <div className={styles.social}>
+        <p className={styles.connect}>CONNECT</p>
 
-        <ul className={styles.footer__social_icons}>
+        <ul className={styles.socialIcons}>
           <li>
             <a href="#">
-              <Inst alt="Instagram" className={styles.footer__social_icon} />
+              <Inst alt="Instagram" className={styles.icon} />
             </a>
           </li>
           <li>
             <a href="#">
-              <Fb alt="Facebook" className={styles.footer__social_icon} />
+              <Fb alt="Facebook" className={styles.icon} />
             </a>
           </li>
           <li>
             <a href="#">
-              <Yt alt="Logo" className={styles.footer__social_icon} />
+              <Yt alt="Logo" className={styles.icon} />
             </a>
           </li>
           <li>
             <a href="#">
-              <Tw alt="Logo" className={styles.footer__social_icon} />
+              <Tw alt="Logo" className={styles.icon} />
             </a>
           </li>
         </ul>

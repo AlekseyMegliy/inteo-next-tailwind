@@ -26,16 +26,16 @@ const works = [
 ];
 export default function Works({ width }: { width: number }) {
   return (
-    <section className={styles.works} id="works">
-      <div className={styles.works__firstCol}>
+    <section className={`${styles.root} container`} id="works">
+      <div className={styles.firstCol}>
         <div className="flex flex-col gap-6">
           <p className="sign">RECENT WORKS</p>
-          <h1 className="container_header">
+          <h1 className="containerHeader">
             Some of <i>our crafts</i> made with love
           </h1>
         </div>
 
-        <div className={styles.works__item}>
+        <div className={styles.item}>
           <Image
             className="w-full md:mb-2"
             alt="Service Icon"
@@ -53,9 +53,9 @@ export default function Works({ width }: { width: number }) {
           </button>
         )}
       </div>
-      <div className={styles.works__secondCol}>
+      <div className={styles.secondCol}>
         {works.slice(1).map((item, index) => (
-          <div className={styles.works__item} key={index}>
+          <div className={styles.item} key={index}>
             <Image
               className="w-full "
               alt="Service Icon"

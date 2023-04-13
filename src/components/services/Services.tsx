@@ -24,18 +24,18 @@ const services = [
 
 export default function Services() {
   return (
-    <section className={styles.services} id="services">
+    <section className={styles.root} id="services">
       <div className="flex flex-col gap-6 lg:w-3/5">
         <p className="sign">OUR SERVICES</p>
-        <h2 className="container_header mb-2 ">
+        <h2 className="containerHeader mb-2 ">
           We provide the <i>best solutions</i> for your dream home
         </h2>
       </div>
       <div className="flex flex-col gap-8 lg:flex-row">
         {services.map((item, index) => (
-          <div className={styles.services__item} key={index}>
+          <div className={styles.item} key={index}>
             <item.icon alt="Service" className="mb-6 md:mb-20" />
-            <h3 className={styles.services__item_header}>{item.head}</h3>
+            <h3 className={styles.itemHeader}>{item.head}</h3>
             <p>{item.desc}</p>
           </div>
         ))}

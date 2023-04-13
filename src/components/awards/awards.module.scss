@@ -1,75 +1,38 @@
-.awards {
+.root {
   @apply mt-20 flex flex-col;
+}
+.headers {
+  @apply container flex flex-col items-center  justify-center;
+}
 
-  &__headers {
-    @apply container flex flex-col items-center  justify-center;
+.header {
+  @apply text-center text-5xl font-medium leading-tight;
+
+  @screen sm {
+    @apply text-7xl leading-tight tracking-tight;
+  }
+}
+
+.subheader {
+  @apply mt-6 w-full px-2 text-center text-lg leading-8;
+
+  @screen sm {
+    @apply text-xl;
   }
 
-  &__header {
-    @apply text-center text-5xl font-medium leading-tight;
-
-    @screen sm {
-      @apply text-7xl leading-tight tracking-tight;
-    }
+  @screen lg {
+    @apply w-2/3;
   }
+}
 
-  &__subheader {
-    @apply mt-6 w-full px-2 text-center text-lg leading-8;
+.hero {
+  @apply flex flex-wrap justify-center;
 
-    @screen sm {
-      @apply text-xl;
-    }
-
-    @screen lg {
-      @apply w-2/3;
-    }
+  @screen lg {
+    @apply justify-start;
   }
+}
 
-  &__hero {
-    @apply flex flex-wrap justify-center;
-
-    @screen lg {
-      @apply justify-start;
-    }
-  }
-
-  &__circle {
-    @apply relative left-0 z-10 mt-4 inline-block transform rounded-full border-4 border-solid border-white bg-dark-900;
-  }
-
-  &__honors {
-    @apply flex w-full bg-dark-900 py-6 text-sm font-normal leading-6;
-
-    &_header {
-      @apply rotate-180 transform pl-[52px] font-playfairDisplay text-2xl italic text-white opacity-50 vertical-lr
-      after:absolute after:left-5 after:top-1/2 after:h-[1px] after:w-6 after:bg-white;
-
-      @screen md {
-        @apply pl-[105px];
-        @apply after:left-4 after:w-16;
-      }
-    }
-    &_items {
-      @apply flex w-64 flex-wrap justify-between gap-y-6;
-
-      @screen md {
-        @apply w-full gap-y-8;
-      }
-
-      @screen lg {
-        @apply w-full flex-nowrap;
-      }
-    }
-
-    &_item {
-      @apply box-content flex h-20 w-auto text-sm text-dark-300;
-
-      @screen md {
-        @apply w-64;
-      }
-      @screen lg {
-        @apply w-auto;
-      }
-    }
-  }
+.circle {
+  @apply relative left-0 z-10 mt-4 inline-block transform rounded-full border-4 border-solid border-white bg-dark-900;
 }
