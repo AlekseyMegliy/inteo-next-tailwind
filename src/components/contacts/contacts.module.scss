@@ -22,7 +22,7 @@
   }
 }
 .sayHi {
-  @apply mt-2 inline-block border-b-2 border-primary-600 font-playfairDisplay italic text-primary-600 transition-all duration-300 ease-in-out hover:scale-105 hover:opacity-80 hover:shadow-xl;
+  @apply mt-2 inline-block border-b-2 border-primary-600 font-playfairDisplay italic text-primary-600 transition-all duration-300 ease-in-out hover:scale-105 hover:opacity-80 hover:shadow-sm;
 
   @screen md {
     @apply mt-4;

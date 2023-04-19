@@ -6,7 +6,6 @@ import work2 from "../../assets/work2.png";
 import work3 from "../../assets/work3.png";
 import styles from "./works.module.scss";
 
-const workImgs = [work1, work2, work3];
 const works = [
   {
     icon: work1,
@@ -24,7 +23,7 @@ const works = [
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam.",
   },
 ];
-export default function Works({ width }: { width: number }) {
+export default function Works() {
   return (
     <section className={`${styles.root} container`} id="works">
       <div className={styles.firstCol}>
@@ -47,12 +46,11 @@ export default function Works({ width }: { width: number }) {
           </h3>
           <p>{works[0].desc}</p>
         </div>
-        {width > 1200 && (
-          <button className="button px-6 py-4 text-sm">
-            CONTACT US <Arrow alt="Arrow" />
-          </button>
-        )}
+        <button className="button absolute bottom-16 px-6 py-4 text-sm sm:bottom-[105px] lg:relative lg:bottom-0">
+          CONTACT US <Arrow alt="Arrow" />
+        </button>
       </div>
+
       <div className={styles.secondCol}>
         {works.slice(1).map((item, index) => (
           <div className={styles.item} key={index}>
@@ -69,11 +67,6 @@ export default function Works({ width }: { width: number }) {
           </div>
         ))}
       </div>
-      {width < 1200 && (
-        <button className="button px-6 py-4 text-sm">
-          CONTACT US <Arrow alt="Arrow" />
-        </button>
-      )}
     </section>
   );
 }

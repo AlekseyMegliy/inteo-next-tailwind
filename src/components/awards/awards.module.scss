@@ -2,26 +2,26 @@
   @apply mt-20 flex flex-col;
 }
 .headers {
-  @apply container flex flex-col items-center  justify-center;
+  @apply container flex flex-col items-center justify-center gap-1;
 }
 
 .header {
   @apply text-center text-5xl font-medium leading-tight;
 
   @screen sm {
-    @apply text-7xl leading-tight tracking-tight;
+    @apply text-7xl leading-snug tracking-tight;
   }
 }
 
 .subheader {
-  @apply mt-6 w-full px-2 text-center text-lg leading-8;
+  @apply mt-5 w-full px-2 text-center text-lg leading-8;
 
   @screen sm {
-    @apply text-xl;
+    @apply px-0 text-xl;
   }
 
   @screen lg {
-    @apply w-2/3;
+    @apply w-2/3 px-2;
   }
 }
 

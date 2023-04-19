@@ -13,7 +13,7 @@
     before:absolute before:-left-20 before:top-[10px] before:h-[1px] before:w-16 before:bg-primary-600;
   }
   .containerHeader {
-    @apply font-playfairDisplay text-4xl leading-tight md:text-6xl md:leading-tight md:tracking-tight;
+    @apply font-playfairDisplay text-4xl leading-snug md:text-6xl md:leading-[1.2] md:tracking-tight;
   }
 }
 

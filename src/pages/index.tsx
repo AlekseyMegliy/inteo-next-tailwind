@@ -5,22 +5,8 @@ import Services from "../components/services/Services";
 import Contacts from "../components/contacts/Contacts";
 import Works from "../components/works/Works";
 import Divider from "../components/divider/divider";
-import { useEffect, useState } from "react";
 
-function useWindowSize() {
-  const [size, setSize] = useState([1000]);
-  useEffect(() => {
-    function updateSize() {
-      setSize([window.innerWidth]);
-    }
-    window.addEventListener("resize", updateSize);
-    updateSize();
-    return () => window.removeEventListener("resize", updateSize);
-  }, []);
-  return size;
-}
 export default function Home() {
-  const [width] = useWindowSize();
   return (
     <>
       <Head>
@@ -30,11 +16,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <main>
-        <Awards width={width} />
+        <Awards />
         <AboutUs />
         <Divider />
         <Services />
-        <Works width={width} />
+        <Works />
         <Divider />
         <Contacts />
         <Divider />
