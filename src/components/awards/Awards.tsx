@@ -3,6 +3,7 @@ import Image from "next/image";
 import Honors from "./honors/honors";
 import Arrow from "../../assets/ArrowBg.svg";
 import heroImg from "../../assets/hero-image.png";
+import heroImgMob from "../../assets/hero-image-mob.png";
 import styles from "./awards.module.scss";
 
 export default function Awards() {
@@ -47,15 +48,17 @@ export default function Awards() {
         </div>
         <div className="relative bottom-16 w-full overflow-hidden">
           <Image
-            className=" h-[640px] w-full object-cover"
+            className="hidden h-[640px] w-full object-cover sm:block"
             alt="Main Img"
             src={heroImg}
-            sizes="(max-width: 1200px) 100vw,
-              (max-width: 768px) 50vw,
-              20vw"
             priority
           />
-
+          <Image
+            className="block h-[640px] w-full object-cover sm:hidden"
+            alt="Main Img"
+            src={heroImgMob}
+            priority
+          />
           <Honors />
         </div>
       </div>
