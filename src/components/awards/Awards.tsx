@@ -50,10 +50,7 @@ export default function Awards() {
             className=" h-[640px] w-full object-cover"
             alt="Main Img"
             src={heroImg}
-            sizes="(max-width: 1200px) 100vw,
-              (max-width: 768px) 50vw,
-              20vw"
-            priority
+            sizes="100vw "
           />
 
           <Honors />

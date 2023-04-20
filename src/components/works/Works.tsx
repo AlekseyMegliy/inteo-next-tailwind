@@ -39,7 +39,7 @@ export default function Works() {
             className="w-full md:mb-2"
             alt="Service Icon"
             src={works[0].icon}
-            priority
+            placeholder="blur"
           />
           <h3 className="text-2xl md:text-4xl md:leading-tight">
             {works[0].head}
@@ -58,7 +58,7 @@ export default function Works() {
               className="w-full "
               alt="Service Icon"
               src={item.icon}
-              priority
+              placeholder="blur"
             />
             <h3 className="text-2xl md:text-4xl md:leading-tight">
               {item.head}

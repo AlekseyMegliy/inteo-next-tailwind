@@ -57,13 +57,13 @@ export default function AboutUs() {
           className="mb-10 h-auto w-1/2 sm:mb-20 "
           alt="Winner Img"
           src={aboutImg1}
-          priority
+          placeholder={"blur"}
         />
         <Image
           className="mt-10 h-auto w-1/2 sm:mt-20 "
           alt="Winner Img"
           src={aboutImg2}
-          priority
+          placeholder={"blur"}
         />
       </div>
       <Statistics />
