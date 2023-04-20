@@ -52,6 +52,7 @@ export default function Awards() {
             alt="Main Img"
             src={heroImg}
             priority
+            sizes="100vw "
           />
           <Image
             className="block h-[640px] w-full object-cover sm:hidden"
