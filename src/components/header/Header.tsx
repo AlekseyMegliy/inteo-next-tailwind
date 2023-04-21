@@ -19,25 +19,25 @@ export default function Header() {
       <div className="flex gap-11">
         <ul className="hidden gap-11 md:flex">
           <li>
-            <a
+            <p
               className={styles.link}
               onClick={() => scrollToElement("aboutUs")}
             >
               About
-            </a>
+            </p>
           </li>
           <li>
-            <a
+            <p
               className={styles.link}
               onClick={() => scrollToElement("services")}
             >
               Services
-            </a>
+            </p>
           </li>
           <li>
-            <a className={styles.link} onClick={() => scrollToElement("works")}>
+            <p className={styles.link} onClick={() => scrollToElement("works")}>
               Our Work
-            </a>
+            </p>
           </li>
         </ul>
 

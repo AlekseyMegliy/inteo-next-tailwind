@@ -12,7 +12,7 @@ export default function Contacts() {
       </div>
       <div className={styles.contactsCol}>
         <div className="flex flex-col gap-2">
-          <h4 className=" text-2xl ">Brooklyn, New York</h4>
+          <h3 className=" text-2xl ">Brooklyn, New York</h3>
           <p>
             962 Fifth Avenue Str, 3rd Floor-Trump Building NY 10006, United
             State.

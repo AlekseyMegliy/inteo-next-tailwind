@@ -1,9 +1,10 @@
 import Head from "next/head";
+import dynamic from "next/dynamic";
 import Awards from "../components/awards/Awards";
 import AboutUs from "../components/aboutUs/AboutUs";
-import Services from "../components/services/Services";
-import Contacts from "../components/contacts/Contacts";
-import Works from "../components/works/Works";
+const Services = dynamic(() => import("../components/services/Services"));
+const Contacts = dynamic(() => import("../components/contacts/Contacts"));
+const Works = dynamic(() => import("../components/works/Works"));
 import Divider from "../components/divider/divider";
 
 export default function Home() {

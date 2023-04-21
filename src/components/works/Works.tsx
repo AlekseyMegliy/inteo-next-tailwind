@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Arrow from "../../assets/Arrow.svg";
-import work1 from "../../assets/work1.png";
-import work2 from "../../assets/work2.png";
-import work3 from "../../assets/work3.png";
+import work1 from "../../assets/work1.webp";
+import work2 from "../../assets/work2.webp";
+import work3 from "../../assets/work3.webp";
 import styles from "./works.module.scss";
 
 const works = [
