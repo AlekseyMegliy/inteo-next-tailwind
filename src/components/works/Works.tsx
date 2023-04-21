@@ -29,9 +29,9 @@ export default function Works() {
       <div className={styles.firstCol}>
         <div className="flex flex-col gap-6">
           <p className="sign">RECENT WORKS</p>
-          <h1 className="containerHeader">
+          <h2 className="containerHeader">
             Some of <i>our crafts</i> made with love
-          </h1>
+          </h2>
         </div>
 
         <div className={styles.item}>

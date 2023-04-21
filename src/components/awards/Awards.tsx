@@ -1,18 +1,15 @@
 import React from "react";
-import Image from "next/image";
 import Honors from "./honors/honors";
 import Arrow from "../../assets/ArrowBg.svg";
-// import heroImg from "../../assets/hero-image.png";
-// import heroImgMob from "../../assets/hero-image-mob.png";
 import styles from "./awards.module.scss";
 
 export default function Awards() {
   return (
     <section className={styles.root}>
       <div className={styles.headers}>
-        <h1 className={styles.header}>
+        <h2 className={styles.header}>
           Make <i>your home</i> an ode to joy
-        </h1>
+        </h2>
         <p className={styles.subheader}>
           We turn your empty house to a lovely home, making the compact spaces
           with sapce saving furnitures. Making the unique tastes of yours into
