@@ -38,6 +38,7 @@ module.exports = {
         {
           fontFeatureSettings: '"pnum", "lnum", "liga"',
         },
+        "Georgia",
       ],
     },
   },
