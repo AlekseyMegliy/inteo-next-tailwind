@@ -48,7 +48,7 @@ export default function Awards() {
         </div>
         <div className="relative bottom-16 w-full overflow-hidden">
           <picture>
-            <source media="(min-width: 401px)" srcSet="hero-image.webp" />
+            <source media="(min-width: 501px)" srcSet="hero-image.webp" />
             <img
               src="hero-image-mob.webp"
               alt="Main img"
