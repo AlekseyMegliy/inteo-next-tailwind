@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Honors from "./honors/honors";
 import Arrow from "../../assets/ArrowBg.svg";
-import heroImg from "../../assets/hero-image.png";
-import heroImgMob from "../../assets/hero-image-mob.png";
+// import heroImg from "../../assets/hero-image.png";
+// import heroImgMob from "../../assets/hero-image-mob.png";
 import styles from "./awards.module.scss";
 
 export default function Awards() {
@@ -47,19 +47,15 @@ export default function Awards() {
           </div>
         </div>
         <div className="relative bottom-16 w-full overflow-hidden">
-          <Image
-            className="hidden h-[640px] w-full object-cover sm:block"
-            alt="Main Img"
-            src={heroImg}
-            priority
-            sizes="100vw "
-          />
-          <Image
-            className="block h-[640px] w-full object-cover sm:hidden"
-            alt="Main Img"
-            src={heroImgMob}
-            priority
-          />
+          <picture>
+            <source media="(max-width: 400px)" srcSet="hero-image-mob.webp" />
+            <source media="(min-width: 401px)" srcSet="hero-image.webp" />
+            <img
+              src="hero-image.webp"
+              alt="Main img"
+              className="h-[640px] w-full object-cover"
+            />
+          </picture>
           <Honors />
         </div>
       </div>
