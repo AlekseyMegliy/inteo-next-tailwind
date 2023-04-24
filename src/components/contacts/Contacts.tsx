@@ -1,18 +1,18 @@
 import React from "react";
-import styles from "./contacts.module.css";
+import styles from "./contacts.module.scss";
 
 export default function Contacts() {
   return (
-    <div className={styles.contacts}>
-      <div className={styles.contacts_headers}>
-        <h1>Kick-start your dream home with us</h1>
-        <h2 className={styles.contacts_headers__sayHi}>Send us a hi</h2>
+    <section className={styles.root}>
+      <div className={styles.headers}>
+        <h2>Kick-start your dream home with us</h2>
+        <a href="#" className={styles.sayHi}>
+          Send us a hi
+        </a>
       </div>
-      <div className={styles.contacts_contactsCol}>
+      <div className={styles.contactsCol}>
         <div className="flex flex-col gap-2">
-          <h2 className="font-playfairDisplay text-2xl font-normal">
-            Brooklyn, New York
-          </h2>
+          <h3 className=" text-2xl ">Brooklyn, New York</h3>
           <p>
             962 Fifth Avenue Str, 3rd Floor-Trump Building NY 10006, United
             State.
@@ -21,17 +21,17 @@ export default function Contacts() {
 
         <div className="flex flex-col gap-2">
           <p>Email us at</p>
-          <p className={styles.contacts_contactsCol__contact}>
+          <a href="#" className={styles.contact}>
             hello@landify.design
-          </p>
+          </a>
         </div>
         <div className="flex flex-col gap-2">
           <p>If you&apos;re hurry, quick call for us</p>
-          <p className={styles.contacts_contactsCol__contact}>
+          <a href="#" className={styles.contact}>
             +8(663)125-08-59
-          </p>
+          </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

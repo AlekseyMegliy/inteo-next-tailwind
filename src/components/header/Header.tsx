@@ -2,7 +2,7 @@ import React from "react";
 import { scroller } from "react-scroll";
 import Logo from "../../assets/Logo.svg";
 import Arrow from "../../assets/Arrow.svg";
-import styles from "./header.module.css";
+import styles from "./header.module.scss";
 
 export default function Header() {
   const scrollToElement = (id: string) => {
@@ -14,31 +14,37 @@ export default function Header() {
     });
   };
   return (
-    <div className={styles.header}>
+    <header className={styles.root}>
       <Logo alt="Logo" />
-      <div className="flex gap-12">
-        <a
-          className={styles.header__link}
-          onClick={() => scrollToElement("aboutUs")}
-        >
-          About
-        </a>
-        <a
-          className={styles.header__link}
-          onClick={() => scrollToElement("services")}
-        >
-          Services
-        </a>
-        <a
-          className={styles.header__link}
-          onClick={() => scrollToElement("works")}
-        >
-          Our Work
-        </a>
+      <div className="flex gap-11">
+        <ul className="hidden gap-11 md:flex">
+          <li>
+            <p
+              className={styles.link}
+              onClick={() => scrollToElement("aboutUs")}
+            >
+              About
+            </p>
+          </li>
+          <li>
+            <p
+              className={styles.link}
+              onClick={() => scrollToElement("services")}
+            >
+              Services
+            </p>
+          </li>
+          <li>
+            <p className={styles.link} onClick={() => scrollToElement("works")}>
+              Our Work
+            </p>
+          </li>
+        </ul>
+
         <button className="button">
-          CONTUCT US <Arrow alt="Arrow" />
+          CONTACT US <Arrow alt="Arrow" className="ml-1" />
         </button>
       </div>
-    </div>
+    </header>
   );
 }

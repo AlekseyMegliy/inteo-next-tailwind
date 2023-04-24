@@ -1,0 +1,40 @@
+.root {
+  @apply relative mt-24 flex flex-col gap-12 pb-36;
+
+  @screen sm {
+    @apply mt-48 pb-52;
+  }
+  @screen md {
+    @apply gap-20;
+  }
+  @screen lg {
+    @apply mb-32 mt-56 flex-row gap-10 pb-0;
+  }
+}
+.firstCol {
+  @apply flex w-full flex-col gap-12 text-lg leading-8;
+
+  @screen lg {
+    @apply w-1/2 gap-24;
+  }
+}
+
+.secondCol {
+  @apply flex w-full flex-col gap-12;
+
+  @screen md {
+    @apply gap-20;
+  }
+
+  @screen lg {
+    @apply w-1/2 px-14;
+  }
+}
+
+.item {
+  @apply flex flex-col gap-4 text-sm leading-6;
+
+  @screen md {
+    @apply text-lg leading-8;
+  }
+}

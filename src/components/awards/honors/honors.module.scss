@@ -1,0 +1,34 @@
+.root {
+  @apply flex w-full bg-dark-900 py-6 text-sm font-normal leading-6;
+}
+.header {
+  @apply rotate-180 transform pl-[52px] font-playfairDisplay text-2xl italic text-white opacity-50 vertical-lr
+        after:absolute after:left-5 after:top-1/2 after:h-[1px] after:w-6 after:bg-white;
+
+  @screen md {
+    @apply pl-[105px];
+    @apply after:left-4 after:w-16;
+  }
+}
+.items {
+  @apply flex w-64 flex-wrap justify-between gap-y-6;
+
+  @screen md {
+    @apply w-full gap-y-8;
+  }
+
+  @screen lg {
+    @apply flex-nowrap;
+  }
+}
+
+.item {
+  @apply box-content flex h-20 w-auto text-sm text-dark-300;
+
+  @screen md {
+    @apply w-64;
+  }
+  @screen lg {
+    @apply w-auto;
+  }
+}

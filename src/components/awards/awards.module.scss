@@ -1,0 +1,38 @@
+.root {
+  @apply mt-20 flex flex-col;
+}
+.headers {
+  @apply container flex flex-col items-center justify-center gap-1;
+}
+
+.header {
+  @apply text-center text-5xl font-medium leading-tight;
+
+  @screen sm {
+    @apply text-7xl leading-snug tracking-tight;
+  }
+}
+
+.subheader {
+  @apply mt-5 w-full px-2 text-center text-lg leading-8;
+
+  @screen sm {
+    @apply px-0 text-xl;
+  }
+
+  @screen lg {
+    @apply w-2/3 px-2;
+  }
+}
+
+.hero {
+  @apply flex flex-wrap justify-center;
+
+  @screen lg {
+    @apply justify-start;
+  }
+}
+
+.circle {
+  @apply relative left-0 z-10 mt-4 inline-block transform rounded-full border-4 border-solid border-white bg-dark-900;
+}

@@ -1,0 +1,24 @@
+.root {
+  @apply container mt-20 flex flex-col gap-9;
+
+  @screen md {
+    @apply mt-36 gap-[70px];
+  }
+  @screen lg {
+    @apply mt-40;
+  }
+}
+.item {
+  @apply flex-grow border-2 border-primary-100 p-8;
+
+  @screen md {
+    @apply p-10;
+  }
+  .itemHeader {
+    @apply mb-4 text-3xl font-normal leading-10;
+
+    @screen md {
+      @apply text-4xl leading-snug;
+    }
+  }
+}

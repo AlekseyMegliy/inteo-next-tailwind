@@ -1,17 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display&family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
   .button {
-    @apply flex self-start bg-brown px-5 py-3 font-outfit text-sm font-semibold text-white hover:bg-amber-800;
+    @apply flex self-start bg-primary-600 px-5 py-3 font-outfit text-xs font-semibold leading-5 text-white transition duration-300 ease-in-out hover:bg-orange-900 hover:shadow-xl;
   }
   .sign {
-    @apply relative font-outfit text-sm font-semibold text-brown;
+    @apply relative ml-20 font-outfit text-sm font-semibold tracking-widest text-primary-600
+    before:absolute before:-left-20 before:top-[10px] before:h-[1px] before:w-16 before:bg-primary-600;
   }
-  .container_header {
-    @apply font-playfairDisplay text-4xl font-normal leading-tight tracking-tight text-dark sm:text-6xl sm:leading-tight sm:tracking-normal;
+  .containerHeader {
+    @apply font-playfairDisplay text-4xl leading-snug md:text-6xl md:leading-[1.2] md:tracking-tight;
+  }
+}
+
+@layer base {
+  body {
+    @apply font-outfit text-lg font-light leading-8 text-dark-700;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-playfairDisplay font-normal text-dark-900;
   }
 }

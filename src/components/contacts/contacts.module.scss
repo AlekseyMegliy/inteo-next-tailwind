@@ -1,0 +1,43 @@
+.root {
+  @apply container my-10 flex flex-col justify-between gap-12;
+
+  @screen md {
+    @apply my-20;
+  }
+  @screen lg {
+    @apply flex-row;
+  }
+}
+.headers {
+  @apply w-full text-3xl leading-10;
+
+  @screen sm {
+    @apply w-3/4 text-5xl;
+  }
+  @screen md {
+    @apply leading-tight;
+  }
+  @screen lg {
+    @apply w-1/2;
+  }
+}
+.sayHi {
+  @apply mt-2 inline-block border-b-2 border-primary-600 font-playfairDisplay italic text-primary-600 transition-all duration-300 ease-in-out hover:scale-105 hover:opacity-80 hover:shadow-sm;
+
+  @screen md {
+    @apply mt-4;
+  }
+}
+.contactsCol {
+  @apply flex w-full flex-col gap-8 text-sm leading-6;
+
+  @screen md {
+    @apply w-[280px];
+  }
+  @screen lg {
+    @apply pl-2;
+  }
+}
+.contact {
+  @apply font-playfairDisplay text-2xl font-normal text-primary-600 transition-all duration-300 ease-in-out hover:scale-105 hover:contrast-150;
+}
