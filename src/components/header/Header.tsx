@@ -1,18 +1,18 @@
 import React from "react";
-// import { scroller } from "react-scroll";
+import { scroller } from "react-scroll";
 import Logo from "../../assets/Logo.svg";
 import Arrow from "../../assets/Arrow.svg";
 import styles from "./header.module.scss";
 
 export default function Header() {
-  // const scrollToElement = (id: string) => {
-  //   scroller.scrollTo(id, {
-  //     duration: 500,
-  //     delay: 100,
-  //     smooth: true,
-  //     offset: -50,
-  //   });
-  // };
+  const scrollToElement = (id: string) => {
+    scroller.scrollTo(id, {
+      duration: 500,
+      delay: 100,
+      smooth: true,
+      offset: -50,
+    });
+  };
   return (
     <header className={styles.root}>
       <Logo alt="Logo" />
@@ -21,7 +21,7 @@ export default function Header() {
           <li>
             <p
               className={styles.link}
-              // onClick={() => scrollToElement("aboutUs")}
+              onClick={() => scrollToElement("aboutUs")}
             >
               About
             </p>
@@ -29,16 +29,13 @@ export default function Header() {
           <li>
             <p
               className={styles.link}
-              // onClick={() => scrollToElement("services")}
+              onClick={() => scrollToElement("services")}
             >
               Services
             </p>
           </li>
           <li>
-            <p
-              className={styles.link}
-              // onClick={() => scrollToElement("works")}
-            >
+            <p className={styles.link} onClick={() => scrollToElement("works")}>
               Our Work
             </p>
           </li>
